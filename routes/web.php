@@ -18,5 +18,5 @@
 use App\Http\Controllers\WebController;
 
 Route::get('/', [WebController::class, 'index']);
-
+Route::get('/tiempo', [WebController::class, 'index']);
 Route::post('/tiempo', [WebController::class, 'getWeather']);

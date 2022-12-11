@@ -1,3 +1,0 @@
-<div>
-    TIEMPO
-</div>
