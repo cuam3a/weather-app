@@ -23,6 +23,7 @@ class WebController extends Controller
         $response = $client->request('GET', $url);
 
         $responseBody = json_decode($response->getBody());
+        //dd($url);
         if (!$responseBody->results) {
             return redirect('/')->with('error', 'Codigo Postal Incorrecto');
         }
